@@ -1,0 +1,80 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url('images/triangles.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 80px;
+}
+
+header {
+  font-family: 'Pacifico', cursive;
+  margin: 0px auto 30px auto;
+  color: whitesmoke;
+  font-size: 8vw;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10pt;
+  color: darkslategrey;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+#search-bar {
+  width: 60vw;
+  height: auto;
+  background-color: whitesmoke;
+  opacity: 50;
+  margin: 20px auto;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+#search-header {
+  width: 90%;
+  font-size: 3vw;
+  font-weight: bold;
+  color: darkslategrey;
+  margin: 0px auto 15px auto;
+}
+
+#q {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+#error-box {
+  visibility: hidden;
+  width: 60vw;
+  height: auto;
+  background-color: whitesmoke;
+  opacity: 50;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+#error-msg {
+  font-size: 10pt;
+  color: rgb(163, 10, 10);
+  margin: 0 auto;
+}
