@@ -1,71 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <head>
-  <meta charset="utf-8" />
-
-  <!-- Bonus Mission Part 2 - Make it visually engaging -->
-  <link href="./style.css" type="text/css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
-
-  <script>
-    function setSearchEngine() {
-      let actions = {
-        google: 'https://www.google.com/search',
-        duckDuckGo: 'https://duckduckgo.com',
-        bing: 'https://www.bing.com/search',
-        ask: 'https://www.ask.com/web',
-      };
-
-      let form = document.querySelector('form');
-      let buttonSelected = document.querySelector('input[name = engine]:checked');
-
-      // Bonus mission part 1 - user input validation
-      let query = document.getElementById('q');
-      let errorBox = document.getElementById('error-box');
-      let errorMsg = document.getElementById('error-msg');
-
-      // Use notification on page instead of browser alert popup
-      if (query.value === '') {
-        errorBox.style.visibility = 'visible';
-        errorMsg.innerHTML = "Oops! You didn't enter anything to search for.";
-        event.preventDefault();
-      } else if (!buttonSelected) {
-        errorBox.style.visibility = 'visible';
-        errorMsg.innerHTML = 'Oops! Which search engine do you want to use?';
-        event.preventDefault();
-      } else {
-        errorBox.style.visibility = 'hidden';
-      }
-
-      let url = actions[buttonSelected.value];
-      form.action = url;
-    }
-
-    window.addEventListener('load', function () {
-      const form = document.querySelector('form');
-      form.addEventListener('submit', setSearchEngine); // reference function - do not call it
+	<meta charset="utf-8">
+	<script>
+		// TODO: create a handler
+    window.addEventListener("load", function(){
+        // TODO: register the handler
     });
-  </script>
+	</script>
 </head>
 
 <body>
-  <header>Needles from Haystacks</header>
 
-  <div id="search-bar">
-    <p id="search-header">Search anywhere and everywhere!</p>
-    <form target="_blank">
-      <input type="text" id="q" name="q" /><br />
-      <label><input type="radio" name="engine" value="google" /> Google</label>
-      <label><input type="radio" name="engine" value="duckDuckGo" /> DuckDuckGo</label>
-      <label><input type="radio" name="engine" value="bing" /> Bing</label>
-      <label><input type="radio" name="engine" value="ask" /> Ask</label>
-      <button id="submit" value="Go!">Go!</button>
-    </form>
+	<form id="searchForm">
+    <!-- TODO: add form elements -->
+	</form>
 
-  </div>
-
-  <!-- This div must be completely below the #search-bar div -->
-  <div id="error-box">
-    <p id="error-msg"></p>
-  </div>
 </body>
