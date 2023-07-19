@@ -20,14 +20,12 @@
     // Define a named function as the event handler
     function setSearchEngine() {
 
-      // Create object to represent form
+      // Create objects for elements to interact with
       const form = document.querySelector('form');
-
-      // This will be reevaluated every time the function is called
+      const query = document.getElementById('q');
       const buttonSelected = document.querySelector('input[name = engine]:checked');
 
       // Bonus Mission Part 1 - User input validation
-      const query = document.getElementById('q');
 
       // Option 1: Use window alert
       // if (query.value.trim() === '') {
@@ -43,12 +41,12 @@
       const errorMsg = document.getElementById('error-msg');
 
       if (query.value.trim() === '') {
-        errorBox.style.visibility = 'visible';
         errorMsg.innerHTML = "Oops! You didn't enter anything to search for.";
+        errorBox.style.visibility = 'visible';
         event.preventDefault();
       } else if (!buttonSelected) {
-        errorBox.style.visibility = 'visible';
         errorMsg.innerHTML = 'Oops! Which search engine do you want to use?';
+        errorBox.style.visibility = 'visible';
         event.preventDefault();
       } else {
         errorBox.style.visibility = 'hidden';
