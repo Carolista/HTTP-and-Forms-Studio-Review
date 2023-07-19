@@ -1,3 +1,5 @@
+/* BONUS MISSION PART 2 */
+
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -11,7 +13,7 @@ body {
   padding-top: 80px;
 }
 
-header {
+h1 {
   font-family: 'Pacifico', cursive;
   margin: 0px auto 30px auto;
   color: whitesmoke;
